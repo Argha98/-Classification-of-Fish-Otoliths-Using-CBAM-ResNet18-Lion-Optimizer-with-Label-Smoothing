@@ -1,0 +1,313 @@
+
+Namespace(message=' ', img_size=224, arch='resnet18', epochs=100, freeze=7, lr_patience=5, early_stop=10, workers=4, lr=0.001, batch_size=16, weight_decay=0.0001, momentum=0.9, pretrained=True, test=True, train=False, use_attention=True)
+
+=> using pre-trained model 'resnet18'\n=> Using Attention ResNet18 with CBAM\nSegmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_001.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_001.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_002.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_002.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_003.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_003.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_004.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_004.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_005.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_005.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_006.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_006.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_007.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_007.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_008.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_008.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_009.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_009.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_-500µm_001.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_-500µm_001.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_-500µm_002.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_-500µm_002.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_-500µm_003.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_-500µm_003.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_-500µm_004.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_-500µm_004.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_-500µm_005.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_-500µm_005.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_-500µm_006.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_-500µm_006.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_-500µm_007.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_-500µm_007.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_001.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_001.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_002.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_002.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_003.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_003.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_004.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_004.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_005.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_005.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_006.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_006.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_007.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_007.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_008.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_008.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_009.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_009.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_010.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_010.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_011.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_011.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_012.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_012.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_013.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_013.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_014.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_014.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_015.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_015.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_016.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_016.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_001.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_001.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_002.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_002.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_003.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_003.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_004.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_004.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_005.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_005.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_006.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_006.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_007.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_007.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_008.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_008.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_009.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_009.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_010.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_010.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_011.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_011.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_+500µm_001.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_+500µm_001.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_+500µm_003.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_+500µm_003.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_+500µm_005.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_+500µm_005.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_+500µm_006.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_+500µm_006.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_+500µm_007.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_+500µm_007.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_-500µm_001.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_-500µm_001.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_-500µm_002.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_-500µm_002.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_-500µm_003.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_-500µm_003.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_-500µm_004.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_-500µm_004.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_-500µm_005.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_-500µm_005.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_-500µm_006.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_-500µm_006.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_190517_SCH_+500µm_01.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_190517_SCH_+500µm_01.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_190517_SCH_+500µm_02.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_190517_SCH_+500µm_02.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_190517_SCH_+500µm_03.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_190517_SCH_+500µm_03.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_190517_SCH_+500µm_04.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_190517_SCH_+500µm_04.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_190517_SCH_+500µm_05.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_190517_SCH_+500µm_05.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_190517_SCH_+500µm_06.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_190517_SCH_+500µm_06.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_190517_SCH_-500µm_001.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_190517_SCH_-500µm_001.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_220517_SCH_+500µm_01.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_220517_SCH_+500µm_01.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_220517_SCH_+500µm_02.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_220517_SCH_+500µm_02.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_220517_SCH_+500µm_03.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_220517_SCH_+500µm_03.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_220517_SCH_+500µm_04.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_220517_SCH_+500µm_04.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_220517_SCH_-500µm_01.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_220517_SCH_-500µm_01.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_220517_SCH_-500µm_02.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_220517_SCH_-500µm_02.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_250517_SCH_+500µm_001.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_250517_SCH_+500µm_001.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_250517_SCH_+500µm_002.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_250517_SCH_+500µm_002.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_250517_SCH_+500µm_004.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_250517_SCH_+500µm_004.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_250517_SCH_-500µm_001.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_250517_SCH_-500µm_001.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_250517_SCH_-500µm_002.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_250517_SCH_-500µm_002.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_250517_SCH_-500µm_003.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_250517_SCH_-500µm_003.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_290517_SCH_+500µm_001.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_290517_SCH_+500µm_001.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_290517_SCH_+500µm_002.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_290517_SCH_+500µm_002.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_290517_SCH_+500µm_003.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_290517_SCH_+500µm_003.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_290517_SCH_+500µm_004.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_290517_SCH_+500µm_004.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_290517_SCH_-500µm_001.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_290517_SCH_-500µm_001.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_290517_SCH_-500µm_002.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_290517_SCH_-500µm_002.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_001.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_001.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_001_gemeten.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_001_gemeten.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_002.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_002.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_002_gemeten.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_002_gemeten.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_003.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_003.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_003_gemeten.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_003_gemeten.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_004.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_004.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_004_gemeten.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_004_gemeten.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_005.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_005.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_005_gemeten.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_005_gemeten.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_006.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_006.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_006_gemeten.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_006_gemeten.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_007.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_007.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_007_gemeten.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_007_gemeten.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_008.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_008.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_008_gemeten.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_008_gemeten.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_009.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_009.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_009_gemeten.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_009_gemeten.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_001.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_001.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_001_gemeten.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_001_gemeten.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_002.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_002.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_002_gemeten.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_002_gemeten.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_003.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_003.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_003_gemeten.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_003_gemeten.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_004.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_004.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_004_gemeten.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_004_gemeten.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_005.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_005.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_005_gemeten.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_005_gemeten.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_006.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_006.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_006_gemeten.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_006_gemeten.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_007.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_007.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_007_gemeten.jpg 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_007_gemeten.jpg 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_001.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_001.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_002.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_002.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_003.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_003.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_004.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_004.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_005.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_005.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_006.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_006.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_007.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_007.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_008.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_008.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_009.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_009.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_001.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_001.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_002.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_002.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_003.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_003.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_004.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_004.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_005.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_005.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_006.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_006.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_007.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_007.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_008.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_008.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_009.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_009.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_010.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_010.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_011.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_011.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_012.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_012.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_013.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_013.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_001.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_001.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_002.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_002.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_003.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_003.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_004.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_004.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_005.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_005.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_006.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_006.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_007.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_007.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_008.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_008.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_009.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_009.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_010.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_010.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_011.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_011.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_012.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_012.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_013.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_013.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_001.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_001.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_002.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_002.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_003.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_003.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_004.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_004.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_005.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_005.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_006.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_006.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_007.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_007.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_008.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_008.tif 
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_009.tif 
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_009.tif 

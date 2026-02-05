@@ -1,0 +1,1114 @@
+TRAIN
+PS D:\PROJECT 012\otoliths-identification> python main.py --arch resnet18 --use_attention --pretrained --train -img_size 224 -b 16 -j 4 -epochs 150 -lr 0.00001 -lr_patience 10 -early_stop 20 -freeze 0 --weight_decay 0.01 -message "Attention_ResNet18_Lion_Optimizer"
+
+Namespace(message='Attention_ResNet18_Lion_Optimizer', img_size=224, arch='resnet18', epochs=150, freeze=0, lr_patience=10, early_stop=20, workers=4, lr=1e-05, batch_size=16, weight_decay=0.01, momentum=0.9, pretrained=True, test=False, train=True, use_attention=True)
+
+=> using pre-trained model 'resnet18'\nC:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+=> Using Attention ResNet18 with CBAM\nClass weights: tensor([7.4740, 2.0618, 1.0265, 0.4067, 5.6944, 0.5641])\nEpoch [ 1][ 10.03 %]    Loss 1.8566     acc_level_0 0.6389      acc_level_1 0.1875
+Epoch [ 1][ 20.07 %]    Loss 1.7605     acc_level_0 0.6771      acc_level_1 0.2153
+Epoch [ 1][ 30.10 %]    Loss 1.7928     acc_level_0 0.6806      acc_level_1 0.2060
+Epoch [ 1][ 40.14 %]    Loss 1.7880     acc_level_0 0.6823      acc_level_1 0.2205
+Epoch [ 1][ 50.17 %]    Loss 1.7599     acc_level_0 0.7000      acc_level_1 0.2306
+Epoch [ 1][ 60.21 %]    Loss 1.7846     acc_level_0 0.7083      acc_level_1 0.2407
+Epoch [ 1][ 70.24 %]    Loss 1.7576     acc_level_0 0.7143      acc_level_1 0.2510
+Epoch [ 1][ 80.28 %]    Loss 1.7271     acc_level_0 0.7231      acc_level_1 0.2708
+Epoch [ 1][ 90.31 %]    Loss 1.7277     acc_level_0 0.7215      acc_level_1 0.2747
+Epoch [ 1][100.00 %]    Loss 1.7116     acc_level_0 0.7247      acc_level_1 0.2836
+
+Valid_loss=1.5717, valid_acc_level_0=0.7436, valid_acc_level_1=0.4487
+Saving best model architecture...
+----------------------------------------------------------
+Epoch [ 2][ 10.03 %]    Loss 1.4741     acc_level_0 0.7292      acc_level_1 0.3611
+Epoch [ 2][ 20.07 %]    Loss 1.5904     acc_level_0 0.7639      acc_level_1 0.3750
+Epoch [ 2][ 30.10 %]    Loss 1.5252     acc_level_0 0.7616      acc_level_1 0.3773
+Epoch [ 2][ 40.14 %]    Loss 1.5435     acc_level_0 0.7569      acc_level_1 0.3802
+Epoch [ 2][ 50.17 %]    Loss 1.5169     acc_level_0 0.7681      acc_level_1 0.3931
+Epoch [ 2][ 60.21 %]    Loss 1.5304     acc_level_0 0.7870      acc_level_1 0.4259
+Epoch [ 2][ 70.24 %]    Loss 1.5175     acc_level_0 0.7986      acc_level_1 0.4385
+Epoch [ 2][ 80.28 %]    Loss 1.5165     acc_level_0 0.8168      acc_level_1 0.4488
+Epoch [ 2][ 90.31 %]    Loss 1.4964     acc_level_0 0.8210      acc_level_1 0.4529
+Epoch [ 2][100.00 %]    Loss 1.4656     acc_level_0 0.8307      acc_level_1 0.4613
+
+Valid_loss=1.2506, valid_acc_level_0=0.8974, valid_acc_level_1=0.6474
+Saving best model architecture...
+----------------------------------------------------------
+Epoch [ 3][ 10.03 %]    Loss 1.1317     acc_level_0 0.9306      acc_level_1 0.5486
+Epoch [ 3][ 20.07 %]    Loss 1.2949     acc_level_0 0.9097      acc_level_1 0.5625
+Epoch [ 3][ 30.10 %]    Loss 1.2352     acc_level_0 0.9236      acc_level_1 0.5949
+Epoch [ 3][ 40.14 %]    Loss 1.2772     acc_level_0 0.9253      acc_level_1 0.6059
+Epoch [ 3][ 50.17 %]    Loss 1.2403     acc_level_0 0.9319      acc_level_1 0.6000
+Epoch [ 3][ 60.21 %]    Loss 1.2337     acc_level_0 0.9375      acc_level_1 0.5995
+Epoch [ 3][ 70.24 %]    Loss 1.2117     acc_level_0 0.9415      acc_level_1 0.6002
+Epoch [ 3][ 80.28 %]    Loss 1.2097     acc_level_0 0.9436      acc_level_1 0.6033
+Epoch [ 3][ 90.31 %]    Loss 1.2069     acc_level_0 0.9468      acc_level_1 0.6011
+Epoch [ 3][100.00 %]    Loss 1.2093     acc_level_0 0.9443      acc_level_1 0.6007
+
+Valid_loss=1.0308, valid_acc_level_0=0.9615, valid_acc_level_1=0.7564
+Saving best model architecture...
+----------------------------------------------------------
+Epoch [ 4][ 10.03 %]    Loss 1.1502     acc_level_0 0.9375      acc_level_1 0.5764
+Epoch [ 4][ 20.07 %]    Loss 1.1102     acc_level_0 0.9410      acc_level_1 0.5903
+Epoch [ 4][ 30.10 %]    Loss 1.0994     acc_level_0 0.9491      acc_level_1 0.6065
+Epoch [ 4][ 40.14 %]    Loss 1.0484     acc_level_0 0.9531      acc_level_1 0.6233
+Epoch [ 4][ 50.17 %]    Loss 1.0373     acc_level_0 0.9569      acc_level_1 0.6486
+Epoch [ 4][ 60.21 %]    Loss 1.0336     acc_level_0 0.9595      acc_level_1 0.6458
+Epoch [ 4][ 70.24 %]    Loss 1.0227     acc_level_0 0.9573      acc_level_1 0.6399
+Epoch [ 4][ 80.28 %]    Loss 1.0534     acc_level_0 0.9523      acc_level_1 0.6415
+Epoch [ 4][ 90.31 %]    Loss 1.0529     acc_level_0 0.9537      acc_level_1 0.6389
+Epoch [ 4][100.00 %]    Loss 1.0439     acc_level_0 0.9575      acc_level_1 0.6418
+
+Valid_loss=0.8718, valid_acc_level_0=0.9744, valid_acc_level_1=0.7308
+----------------------------------------------------------
+Epoch [ 5][ 10.03 %]    Loss 0.9009     acc_level_0 0.9444      acc_level_1 0.6458
+Epoch [ 5][ 20.07 %]    Loss 0.9306     acc_level_0 0.9549      acc_level_1 0.6667
+Epoch [ 5][ 30.10 %]    Loss 0.9830     acc_level_0 0.9653      acc_level_1 0.6736
+Epoch [ 5][ 40.14 %]    Loss 0.9663     acc_level_0 0.9653      acc_level_1 0.6910
+Epoch [ 5][ 50.17 %]    Loss 0.9417     acc_level_0 0.9708      acc_level_1 0.6903
+Epoch [ 5][ 60.21 %]    Loss 0.9392     acc_level_0 0.9722      acc_level_1 0.6840
+Epoch [ 5][ 70.24 %]    Loss 0.9286     acc_level_0 0.9683      acc_level_1 0.6825
+Epoch [ 5][ 80.28 %]    Loss 0.9101     acc_level_0 0.9688      acc_level_1 0.6927
+Epoch [ 5][ 90.31 %]    Loss 0.9072     acc_level_0 0.9699      acc_level_1 0.6952
+Epoch [ 5][100.00 %]    Loss 0.9048     acc_level_0 0.9700      acc_level_1 0.6927
+
+Valid_loss=0.7190, valid_acc_level_0=0.9872, valid_acc_level_1=0.8205
+Saving best model architecture...
+----------------------------------------------------------
+Epoch [ 6][ 10.03 %]    Loss 0.8838     acc_level_0 0.9722      acc_level_1 0.7639
+Epoch [ 6][ 20.07 %]    Loss 0.9097     acc_level_0 0.9722      acc_level_1 0.7465
+Epoch [ 6][ 30.10 %]    Loss 0.8737     acc_level_0 0.9792      acc_level_1 0.7338
+Epoch [ 6][ 40.14 %]    Loss 0.8401     acc_level_0 0.9792      acc_level_1 0.7396
+Epoch [ 6][ 50.17 %]    Loss 0.8231     acc_level_0 0.9764      acc_level_1 0.7431
+Epoch [ 6][ 60.21 %]    Loss 0.7927     acc_level_0 0.9792      acc_level_1 0.7569
+Epoch [ 6][ 70.24 %]    Loss 0.7858     acc_level_0 0.9792      acc_level_1 0.7589
+Epoch [ 6][ 80.28 %]    Loss 0.7891     acc_level_0 0.9766      acc_level_1 0.7622
+Epoch [ 6][ 90.31 %]    Loss 0.7769     acc_level_0 0.9769      acc_level_1 0.7677
+Epoch [ 6][100.00 %]    Loss 0.7803     acc_level_0 0.9763      acc_level_1 0.7707
+
+Valid_loss=0.6256, valid_acc_level_0=0.9872, valid_acc_level_1=0.8846
+Saving best model architecture...
+----------------------------------------------------------
+Epoch [ 7][ 10.03 %]    Loss 0.8192     acc_level_0 0.9722      acc_level_1 0.7986
+Epoch [ 7][ 20.07 %]    Loss 0.7481     acc_level_0 0.9688      acc_level_1 0.7951
+Epoch [ 7][ 30.10 %]    Loss 0.7301     acc_level_0 0.9769      acc_level_1 0.8032
+Epoch [ 7][ 40.14 %]    Loss 0.7531     acc_level_0 0.9774      acc_level_1 0.7969
+Epoch [ 7][ 50.17 %]    Loss 0.7528     acc_level_0 0.9806      acc_level_1 0.8000
+Epoch [ 7][ 60.21 %]    Loss 0.7386     acc_level_0 0.9803      acc_level_1 0.7998
+Epoch [ 7][ 70.24 %]    Loss 0.7157     acc_level_0 0.9831      acc_level_1 0.8095
+Epoch [ 7][ 80.28 %]    Loss 0.7182     acc_level_0 0.9852      acc_level_1 0.8108
+Epoch [ 7][ 90.31 %]    Loss 0.7067     acc_level_0 0.9846      acc_level_1 0.8110
+Epoch [ 7][100.00 %]    Loss 0.6992     acc_level_0 0.9847      acc_level_1 0.8070
+
+Valid_loss=0.5480, valid_acc_level_0=0.9872, valid_acc_level_1=0.8846
+Saving best model architecture...
+----------------------------------------------------------
+Epoch [ 8][ 10.03 %]    Loss 0.6204     acc_level_0 0.9792      acc_level_1 0.8611
+Epoch [ 8][ 20.07 %]    Loss 0.7174     acc_level_0 0.9861      acc_level_1 0.8715
+Epoch [ 8][ 30.10 %]    Loss 0.6513     acc_level_0 0.9907      acc_level_1 0.8727
+Epoch [ 8][ 40.14 %]    Loss 0.6202     acc_level_0 0.9913      acc_level_1 0.8663
+Epoch [ 8][ 50.17 %]    Loss 0.6433     acc_level_0 0.9903      acc_level_1 0.8611
+Epoch [ 8][ 60.21 %]    Loss 0.6559     acc_level_0 0.9907      acc_level_1 0.8576
+Epoch [ 8][ 70.24 %]    Loss 0.6541     acc_level_0 0.9901      acc_level_1 0.8512
+Epoch [ 8][ 80.28 %]    Loss 0.6592     acc_level_0 0.9905      acc_level_1 0.8559
+Epoch [ 8][ 90.31 %]    Loss 0.6662     acc_level_0 0.9907      acc_level_1 0.8519
+Epoch [ 8][100.00 %]    Loss 0.6613     acc_level_0 0.9916      acc_level_1 0.8564
+
+Valid_loss=0.5274, valid_acc_level_0=0.9936, valid_acc_level_1=0.9038
+Saving best model architecture...
+----------------------------------------------------------
+Epoch [ 9][ 10.03 %]    Loss 0.5985     acc_level_0 0.9931      acc_level_1 0.8403
+Epoch [ 9][ 20.07 %]    Loss 0.6138     acc_level_0 0.9965      acc_level_1 0.8403
+Epoch [ 9][ 30.10 %]    Loss 0.5855     acc_level_0 0.9977      acc_level_1 0.8611
+Epoch [ 9][ 40.14 %]    Loss 0.6397     acc_level_0 0.9965      acc_level_1 0.8646
+Epoch [ 9][ 50.17 %]    Loss 0.6305     acc_level_0 0.9917      acc_level_1 0.8625
+Epoch [ 9][ 60.21 %]    Loss 0.6383     acc_level_0 0.9907      acc_level_1 0.8588
+Epoch [ 9][ 70.24 %]    Loss 0.6333     acc_level_0 0.9911      acc_level_1 0.8552
+Epoch [ 9][ 80.28 %]    Loss 0.6281     acc_level_0 0.9896      acc_level_1 0.8576
+Epoch [ 9][ 90.31 %]    Loss 0.6266     acc_level_0 0.9892      acc_level_1 0.8611
+Epoch [ 9][100.00 %]    Loss 0.6299     acc_level_0 0.9882      acc_level_1 0.8648
+
+Valid_loss=0.5342, valid_acc_level_0=0.9872, valid_acc_level_1=0.9103
+Saving best model architecture...
+----------------------------------------------------------
+Epoch [10][ 10.03 %]    Loss 0.5793     acc_level_0 1.0000      acc_level_1 0.8889
+Epoch [10][ 20.07 %]    Loss 0.5716     acc_level_0 0.9896      acc_level_1 0.8924
+Epoch [10][ 30.10 %]    Loss 0.6111     acc_level_0 0.9815      acc_level_1 0.8981
+Epoch [10][ 40.14 %]    Loss 0.6508     acc_level_0 0.9740      acc_level_1 0.8698
+Epoch [10][ 50.17 %]    Loss 0.6538     acc_level_0 0.9750      acc_level_1 0.8750
+Epoch [10][ 60.21 %]    Loss 0.6509     acc_level_0 0.9780      acc_level_1 0.8819
+Epoch [10][ 70.24 %]    Loss 0.6257     acc_level_0 0.9782      acc_level_1 0.8829
+Epoch [10][ 80.28 %]    Loss 0.6134     acc_level_0 0.9809      acc_level_1 0.8872
+Epoch [10][ 90.31 %]    Loss 0.6273     acc_level_0 0.9823      acc_level_1 0.8812
+Epoch [10][100.00 %]    Loss 0.6356     acc_level_0 0.9798      acc_level_1 0.8780
+
+Valid_loss=0.4785, valid_acc_level_0=0.9936, valid_acc_level_1=0.9423
+Saving best model architecture...
+----------------------------------------------------------
+Epoch [11][ 10.03 %]    Loss 0.5538     acc_level_0 1.0000      acc_level_1 0.8542
+Epoch [11][ 20.07 %]    Loss 0.5598     acc_level_0 0.9931      acc_level_1 0.8611
+Epoch [11][ 30.10 %]    Loss 0.5876     acc_level_0 0.9931      acc_level_1 0.8681
+Epoch [11][ 40.14 %]    Loss 0.5994     acc_level_0 0.9948      acc_level_1 0.8663
+Epoch [11][ 50.17 %]    Loss 0.5871     acc_level_0 0.9944      acc_level_1 0.8681
+Epoch [11][ 60.21 %]    Loss 0.5895     acc_level_0 0.9931      acc_level_1 0.8681
+Epoch [11][ 70.24 %]    Loss 0.5785     acc_level_0 0.9931      acc_level_1 0.8690
+Epoch [11][ 80.28 %]    Loss 0.5767     acc_level_0 0.9939      acc_level_1 0.8655
+Epoch [11][ 90.31 %]    Loss 0.5873     acc_level_0 0.9946      acc_level_1 0.8681
+Epoch [11][100.00 %]    Loss 0.6003     acc_level_0 0.9930      acc_level_1 0.8669
+
+Valid_loss=0.4789, valid_acc_level_0=1.0000, valid_acc_level_1=0.9295
+----------------------------------------------------------
+Epoch [12][ 10.03 %]    Loss 0.6031     acc_level_0 0.9653      acc_level_1 0.8264
+Epoch [12][ 20.07 %]    Loss 0.5797     acc_level_0 0.9826      acc_level_1 0.8472
+Epoch [12][ 30.10 %]    Loss 0.6141     acc_level_0 0.9838      acc_level_1 0.8565
+Epoch [12][ 40.14 %]    Loss 0.5886     acc_level_0 0.9878      acc_level_1 0.8628
+Epoch [12][ 50.17 %]    Loss 0.5823     acc_level_0 0.9875      acc_level_1 0.8708
+Epoch [12][ 60.21 %]    Loss 0.5754     acc_level_0 0.9896      acc_level_1 0.8762
+Epoch [12][ 70.24 %]    Loss 0.5918     acc_level_0 0.9901      acc_level_1 0.8770
+Epoch [12][ 80.28 %]    Loss 0.6030     acc_level_0 0.9896      acc_level_1 0.8724
+Epoch [12][ 90.31 %]    Loss 0.6048     acc_level_0 0.9900      acc_level_1 0.8758
+Epoch [12][100.00 %]    Loss 0.6005     acc_level_0 0.9909      acc_level_1 0.8787
+
+Valid_loss=0.5224, valid_acc_level_0=0.9936, valid_acc_level_1=0.8846
+----------------------------------------------------------
+Epoch [13][ 10.03 %]    Loss 0.8048     acc_level_0 0.9583      acc_level_1 0.8889
+Epoch [13][ 20.07 %]    Loss 0.6233     acc_level_0 0.9688      acc_level_1 0.8646
+Epoch [13][ 30.10 %]    Loss 0.6037     acc_level_0 0.9769      acc_level_1 0.8611
+Epoch [13][ 40.14 %]    Loss 0.5792     acc_level_0 0.9774      acc_level_1 0.8733
+Epoch [13][ 50.17 %]    Loss 0.5999     acc_level_0 0.9764      acc_level_1 0.8778
+Epoch [13][ 60.21 %]    Loss 0.5765     acc_level_0 0.9803      acc_level_1 0.8889
+Epoch [13][ 70.24 %]    Loss 0.5920     acc_level_0 0.9821      acc_level_1 0.8859
+Epoch [13][ 80.28 %]    Loss 0.5883     acc_level_0 0.9835      acc_level_1 0.8845
+Epoch [13][ 90.31 %]    Loss 0.6134     acc_level_0 0.9830      acc_level_1 0.8796
+Epoch [13][100.00 %]    Loss 0.6059     acc_level_0 0.9847      acc_level_1 0.8843
+
+Valid_loss=0.5522, valid_acc_level_0=1.0000, valid_acc_level_1=0.9487
+Saving best model architecture...
+----------------------------------------------------------
+Epoch [14][ 10.03 %]    Loss 0.6199     acc_level_0 0.9861      acc_level_1 0.9028
+Epoch [14][ 20.07 %]    Loss 0.6615     acc_level_0 0.9826      acc_level_1 0.9097
+Epoch [14][ 30.10 %]    Loss 0.6070     acc_level_0 0.9792      acc_level_1 0.8819
+Epoch [14][ 40.14 %]    Loss 0.6088     acc_level_0 0.9844      acc_level_1 0.8837
+Epoch [14][ 50.17 %]    Loss 0.5892     acc_level_0 0.9875      acc_level_1 0.8861
+Epoch [14][ 60.21 %]    Loss 0.5745     acc_level_0 0.9873      acc_level_1 0.8900
+Epoch [14][ 70.24 %]    Loss 0.6038     acc_level_0 0.9861      acc_level_1 0.8859
+Epoch [14][ 80.28 %]    Loss 0.5994     acc_level_0 0.9861      acc_level_1 0.8819
+Epoch [14][ 90.31 %]    Loss 0.5900     acc_level_0 0.9869      acc_level_1 0.8850
+Epoch [14][100.00 %]    Loss 0.5864     acc_level_0 0.9875      acc_level_1 0.8815
+
+Valid_loss=0.5450, valid_acc_level_0=1.0000, valid_acc_level_1=0.8974
+----------------------------------------------------------
+Epoch [15][ 10.03 %]    Loss 0.5911     acc_level_0 0.9931      acc_level_1 0.9167
+Epoch [15][ 20.07 %]    Loss 0.5386     acc_level_0 0.9965      acc_level_1 0.9236
+Epoch [15][ 30.10 %]    Loss 0.5703     acc_level_0 0.9954      acc_level_1 0.8958
+Epoch [15][ 40.14 %]    Loss 0.5823     acc_level_0 0.9965      acc_level_1 0.8941
+Epoch [15][ 50.17 %]    Loss 0.5833     acc_level_0 0.9931      acc_level_1 0.8931
+Epoch [15][ 60.21 %]    Loss 0.5653     acc_level_0 0.9919      acc_level_1 0.8924
+Epoch [15][ 70.24 %]    Loss 0.5516     acc_level_0 0.9921      acc_level_1 0.8948
+Epoch [15][ 80.28 %]    Loss 0.5636     acc_level_0 0.9931      acc_level_1 0.8950
+Epoch [15][ 90.31 %]    Loss 0.5704     acc_level_0 0.9931      acc_level_1 0.8974
+Epoch [15][100.00 %]    Loss 0.5684     acc_level_0 0.9930      acc_level_1 0.8941
+
+Valid_loss=0.5015, valid_acc_level_0=1.0000, valid_acc_level_1=0.9615
+Saving best model architecture...
+----------------------------------------------------------
+Epoch [16][ 10.03 %]    Loss 0.5481     acc_level_0 1.0000      acc_level_1 0.9028
+Epoch [16][ 20.07 %]    Loss 0.5354     acc_level_0 1.0000      acc_level_1 0.9062
+Epoch [16][ 30.10 %]    Loss 0.5551     acc_level_0 0.9954      acc_level_1 0.8958
+Epoch [16][ 40.14 %]    Loss 0.5527     acc_level_0 0.9948      acc_level_1 0.9045
+Epoch [16][ 50.17 %]    Loss 0.5578     acc_level_0 0.9944      acc_level_1 0.9097
+Epoch [16][ 60.21 %]    Loss 0.5642     acc_level_0 0.9942      acc_level_1 0.9132
+Epoch [16][ 70.24 %]    Loss 0.5545     acc_level_0 0.9921      acc_level_1 0.9137
+Epoch [16][ 80.28 %]    Loss 0.5491     acc_level_0 0.9931      acc_level_1 0.9184
+Epoch [16][ 90.31 %]    Loss 0.5397     acc_level_0 0.9931      acc_level_1 0.9167
+Epoch [16][100.00 %]    Loss 0.5412     acc_level_0 0.9930      acc_level_1 0.9150
+
+Valid_loss=0.5570, valid_acc_level_0=1.0000, valid_acc_level_1=0.9615
+----------------------------------------------------------
+Epoch [17][ 10.03 %]    Loss 0.4640     acc_level_0 1.0000      acc_level_1 0.9306
+Epoch [17][ 20.07 %]    Loss 0.4714     acc_level_0 0.9965      acc_level_1 0.9479
+Epoch [17][ 30.10 %]    Loss 0.5079     acc_level_0 0.9907      acc_level_1 0.9306
+Epoch [17][ 40.14 %]    Loss 0.5356     acc_level_0 0.9896      acc_level_1 0.9271
+Epoch [17][ 50.17 %]    Loss 0.5207     acc_level_0 0.9917      acc_level_1 0.9292
+Epoch [17][ 60.21 %]    Loss 0.5368     acc_level_0 0.9931      acc_level_1 0.9213
+Epoch [17][ 70.24 %]    Loss 0.5368     acc_level_0 0.9911      acc_level_1 0.9157
+Epoch [17][ 80.28 %]    Loss 0.5326     acc_level_0 0.9913      acc_level_1 0.9167
+Epoch [17][ 90.31 %]    Loss 0.5226     acc_level_0 0.9923      acc_level_1 0.9159
+Epoch [17][100.00 %]    Loss 0.5249     acc_level_0 0.9909      acc_level_1 0.9157
+
+Valid_loss=0.5351, valid_acc_level_0=0.9936, valid_acc_level_1=0.8910
+----------------------------------------------------------
+Epoch [18][ 10.03 %]    Loss 0.5382     acc_level_0 0.9931      acc_level_1 0.8750
+Epoch [18][ 20.07 %]    Loss 0.5290     acc_level_0 0.9931      acc_level_1 0.8785
+Epoch [18][ 30.10 %]    Loss 0.5592     acc_level_0 0.9907      acc_level_1 0.8912
+Epoch [18][ 40.14 %]    Loss 0.5494     acc_level_0 0.9913      acc_level_1 0.8941
+Epoch [18][ 50.17 %]    Loss 0.5412     acc_level_0 0.9931      acc_level_1 0.9014
+Epoch [18][ 60.21 %]    Loss 0.5371     acc_level_0 0.9907      acc_level_1 0.9016
+Epoch [18][ 70.24 %]    Loss 0.5333     acc_level_0 0.9911      acc_level_1 0.9028
+Epoch [18][ 80.28 %]    Loss 0.5289     acc_level_0 0.9913      acc_level_1 0.9028
+Epoch [18][ 90.31 %]    Loss 0.5348     acc_level_0 0.9907      acc_level_1 0.8989
+Epoch [18][100.00 %]    Loss 0.5364     acc_level_0 0.9909      acc_level_1 0.9038
+
+Valid_loss=0.5373, valid_acc_level_0=1.0000, valid_acc_level_1=0.9551
+----------------------------------------------------------
+Epoch [19][ 10.03 %]    Loss 0.5706     acc_level_0 0.9931      acc_level_1 0.9306
+Epoch [19][ 20.07 %]    Loss 0.5040     acc_level_0 0.9931      acc_level_1 0.9201
+Epoch [19][ 30.10 %]    Loss 0.4898     acc_level_0 0.9954      acc_level_1 0.9329
+Epoch [19][ 40.14 %]    Loss 0.4730     acc_level_0 0.9965      acc_level_1 0.9340
+Epoch [19][ 50.17 %]    Loss 0.4845     acc_level_0 0.9972      acc_level_1 0.9403
+Epoch [19][ 60.21 %]    Loss 0.4983     acc_level_0 0.9977      acc_level_1 0.9421
+Epoch [19][ 70.24 %]    Loss 0.4967     acc_level_0 0.9980      acc_level_1 0.9415
+Epoch [19][ 80.28 %]    Loss 0.4887     acc_level_0 0.9983      acc_level_1 0.9427
+Epoch [19][ 90.31 %]    Loss 0.4944     acc_level_0 0.9977      acc_level_1 0.9429
+Epoch [19][100.00 %]    Loss 0.5015     acc_level_0 0.9972      acc_level_1 0.9429
+
+Valid_loss=0.5067, valid_acc_level_0=0.9936, valid_acc_level_1=0.9744
+Saving best model architecture...
+----------------------------------------------------------
+Epoch [20][ 10.03 %]    Loss 0.4506     acc_level_0 0.9931      acc_level_1 0.9375
+Epoch [20][ 20.07 %]    Loss 0.4602     acc_level_0 0.9931      acc_level_1 0.9340
+Epoch [20][ 30.10 %]    Loss 0.5341     acc_level_0 0.9884      acc_level_1 0.9259
+Epoch [20][ 40.14 %]    Loss 0.5320     acc_level_0 0.9896      acc_level_1 0.9201
+Epoch [20][ 50.17 %]    Loss 0.5227     acc_level_0 0.9903      acc_level_1 0.9278
+Epoch [20][ 60.21 %]    Loss 0.5085     acc_level_0 0.9919      acc_level_1 0.9271
+Epoch [20][ 70.24 %]    Loss 0.5164     acc_level_0 0.9921      acc_level_1 0.9256
+Epoch [20][ 80.28 %]    Loss 0.5106     acc_level_0 0.9922      acc_level_1 0.9271
+Epoch [20][ 90.31 %]    Loss 0.5190     acc_level_0 0.9931      acc_level_1 0.9244
+Epoch [20][100.00 %]    Loss 0.5122     acc_level_0 0.9937      acc_level_1 0.9247
+
+Valid_loss=0.4427, valid_acc_level_0=1.0000, valid_acc_level_1=0.9744
+Saving best model architecture...
+----------------------------------------------------------
+Epoch [21][ 10.03 %]    Loss 0.4795     acc_level_0 1.0000      acc_level_1 0.9375
+Epoch [21][ 20.07 %]    Loss 0.4868     acc_level_0 0.9896      acc_level_1 0.9340
+Epoch [21][ 30.10 %]    Loss 0.4722     acc_level_0 0.9931      acc_level_1 0.9514
+Epoch [21][ 40.14 %]    Loss 0.4996     acc_level_0 0.9948      acc_level_1 0.9549
+Epoch [21][ 50.17 %]    Loss 0.5229     acc_level_0 0.9958      acc_level_1 0.9528
+Epoch [21][ 60.21 %]    Loss 0.5158     acc_level_0 0.9942      acc_level_1 0.9525
+Epoch [21][ 70.24 %]    Loss 0.5115     acc_level_0 0.9950      acc_level_1 0.9454
+Epoch [21][ 80.28 %]    Loss 0.5143     acc_level_0 0.9939      acc_level_1 0.9410
+Epoch [21][ 90.31 %]    Loss 0.5127     acc_level_0 0.9938      acc_level_1 0.9383
+Epoch [21][100.00 %]    Loss 0.5149     acc_level_0 0.9944      acc_level_1 0.9401
+
+Valid_loss=0.4660, valid_acc_level_0=0.9936, valid_acc_level_1=0.9359
+----------------------------------------------------------
+Epoch [22][ 10.03 %]    Loss 0.5357     acc_level_0 1.0000      acc_level_1 0.9097
+Epoch [22][ 20.07 %]    Loss 0.5351     acc_level_0 1.0000      acc_level_1 0.9167
+Epoch [22][ 30.10 %]    Loss 0.4958     acc_level_0 1.0000      acc_level_1 0.9306
+Epoch [22][ 40.14 %]    Loss 0.5046     acc_level_0 0.9983      acc_level_1 0.9340
+Epoch [22][ 50.17 %]    Loss 0.5120     acc_level_0 0.9986      acc_level_1 0.9375
+Epoch [22][ 60.21 %]    Loss 0.5028     acc_level_0 0.9988      acc_level_1 0.9398
+Epoch [22][ 70.24 %]    Loss 0.5070     acc_level_0 0.9980      acc_level_1 0.9405
+Epoch [22][ 80.28 %]    Loss 0.4936     acc_level_0 0.9974      acc_level_1 0.9427
+Epoch [22][ 90.31 %]    Loss 0.4880     acc_level_0 0.9977      acc_level_1 0.9414
+Epoch [22][100.00 %]    Loss 0.4969     acc_level_0 0.9965      acc_level_1 0.9415
+
+Valid_loss=0.4773, valid_acc_level_0=1.0000, valid_acc_level_1=0.9679
+----------------------------------------------------------
+Epoch [23][ 10.03 %]    Loss 0.5092     acc_level_0 0.9931      acc_level_1 0.8958
+Epoch [23][ 20.07 %]    Loss 0.4764     acc_level_0 0.9931      acc_level_1 0.9236
+Epoch [23][ 30.10 %]    Loss 0.5325     acc_level_0 0.9907      acc_level_1 0.9120
+Epoch [23][ 40.14 %]    Loss 0.5119     acc_level_0 0.9931      acc_level_1 0.9219
+Epoch [23][ 50.17 %]    Loss 0.4939     acc_level_0 0.9944      acc_level_1 0.9264
+Epoch [23][ 60.21 %]    Loss 0.4942     acc_level_0 0.9954      acc_level_1 0.9340
+Epoch [23][ 70.24 %]    Loss 0.4949     acc_level_0 0.9960      acc_level_1 0.9355
+Epoch [23][ 80.28 %]    Loss 0.4945     acc_level_0 0.9965      acc_level_1 0.9366
+Epoch [23][ 90.31 %]    Loss 0.5014     acc_level_0 0.9969      acc_level_1 0.9398
+Epoch [23][100.00 %]    Loss 0.4990     acc_level_0 0.9965      acc_level_1 0.9387
+
+Valid_loss=0.4595, valid_acc_level_0=1.0000, valid_acc_level_1=0.9744
+----------------------------------------------------------
+Epoch [24][ 10.03 %]    Loss 0.5887     acc_level_0 0.9861      acc_level_1 0.9514
+Epoch [24][ 20.07 %]    Loss 0.5269     acc_level_0 0.9931      acc_level_1 0.9583
+Epoch [24][ 30.10 %]    Loss 0.4982     acc_level_0 0.9931      acc_level_1 0.9537
+Epoch [24][ 40.14 %]    Loss 0.4784     acc_level_0 0.9948      acc_level_1 0.9566
+Epoch [24][ 50.17 %]    Loss 0.4746     acc_level_0 0.9944      acc_level_1 0.9444
+Epoch [24][ 60.21 %]    Loss 0.4736     acc_level_0 0.9954      acc_level_1 0.9502
+Epoch [24][ 70.24 %]    Loss 0.4738     acc_level_0 0.9960      acc_level_1 0.9544
+Epoch [24][ 80.28 %]    Loss 0.5130     acc_level_0 0.9957      acc_level_1 0.9497
+Epoch [24][ 90.31 %]    Loss 0.5058     acc_level_0 0.9961      acc_level_1 0.9522
+Epoch [24][100.00 %]    Loss 0.4959     acc_level_0 0.9965      acc_level_1 0.9526
+
+Valid_loss=0.4651, valid_acc_level_0=1.0000, valid_acc_level_1=0.9808
+Saving best model architecture...
+----------------------------------------------------------
+Epoch [25][ 10.03 %]    Loss 0.4146     acc_level_0 1.0000      acc_level_1 0.9444
+Epoch [25][ 20.07 %]    Loss 0.4480     acc_level_0 1.0000      acc_level_1 0.9549
+Epoch [25][ 30.10 %]    Loss 0.4728     acc_level_0 1.0000      acc_level_1 0.9468
+Epoch [25][ 40.14 %]    Loss 0.4665     acc_level_0 1.0000      acc_level_1 0.9462
+Epoch [25][ 50.17 %]    Loss 0.4634     acc_level_0 1.0000      acc_level_1 0.9514
+Epoch [25][ 60.21 %]    Loss 0.4726     acc_level_0 1.0000      acc_level_1 0.9560
+Epoch [25][ 70.24 %]    Loss 0.4756     acc_level_0 1.0000      acc_level_1 0.9544
+Epoch [25][ 80.28 %]    Loss 0.4837     acc_level_0 0.9991      acc_level_1 0.9479
+Epoch [25][ 90.31 %]    Loss 0.4831     acc_level_0 0.9992      acc_level_1 0.9483
+Epoch [25][100.00 %]    Loss 0.4838     acc_level_0 0.9993      acc_level_1 0.9429
+
+Valid_loss=0.4365, valid_acc_level_0=1.0000, valid_acc_level_1=0.9808
+Saving best model architecture...
+----------------------------------------------------------
+Epoch [26][ 10.03 %]    Loss 0.4925     acc_level_0 1.0000      acc_level_1 0.9444
+Epoch [26][ 20.07 %]    Loss 0.4891     acc_level_0 0.9965      acc_level_1 0.9375
+Epoch [26][ 30.10 %]    Loss 0.4692     acc_level_0 0.9977      acc_level_1 0.9398
+Epoch [26][ 40.14 %]    Loss 0.4913     acc_level_0 0.9983      acc_level_1 0.9444
+Epoch [26][ 50.17 %]    Loss 0.4852     acc_level_0 0.9986      acc_level_1 0.9458
+Epoch [26][ 60.21 %]    Loss 0.4909     acc_level_0 0.9977      acc_level_1 0.9433
+Epoch [26][ 70.24 %]    Loss 0.4842     acc_level_0 0.9980      acc_level_1 0.9444
+Epoch [26][ 80.28 %]    Loss 0.4875     acc_level_0 0.9983      acc_level_1 0.9470
+Epoch [26][ 90.31 %]    Loss 0.4883     acc_level_0 0.9985      acc_level_1 0.9437
+Epoch [26][100.00 %]    Loss 0.5011     acc_level_0 0.9972      acc_level_1 0.9429
+
+Valid_loss=0.4630, valid_acc_level_0=1.0000, valid_acc_level_1=0.9808
+----------------------------------------------------------
+Epoch [27][ 10.03 %]    Loss 0.4130     acc_level_0 0.9931      acc_level_1 0.9722
+Epoch [27][ 20.07 %]    Loss 0.4395     acc_level_0 0.9965      acc_level_1 0.9688
+Epoch [27][ 30.10 %]    Loss 0.4408     acc_level_0 0.9954      acc_level_1 0.9630
+Epoch [27][ 40.14 %]    Loss 0.4446     acc_level_0 0.9965      acc_level_1 0.9618
+Epoch [27][ 50.17 %]    Loss 0.4417     acc_level_0 0.9972      acc_level_1 0.9583
+Epoch [27][ 60.21 %]    Loss 0.4467     acc_level_0 0.9977      acc_level_1 0.9641
+Epoch [27][ 70.24 %]    Loss 0.4639     acc_level_0 0.9980      acc_level_1 0.9643
+Epoch [27][ 80.28 %]    Loss 0.4715     acc_level_0 0.9983      acc_level_1 0.9679
+Epoch [27][ 90.31 %]    Loss 0.4624     acc_level_0 0.9977      acc_level_1 0.9676
+Epoch [27][100.00 %]    Loss 0.4646     acc_level_0 0.9979      acc_level_1 0.9652
+
+Valid_loss=0.4403, valid_acc_level_0=1.0000, valid_acc_level_1=0.9808
+----------------------------------------------------------
+Epoch [28][ 10.03 %]    Loss 0.5009     acc_level_0 1.0000      acc_level_1 0.9653
+Epoch [28][ 20.07 %]    Loss 0.4622     acc_level_0 0.9931      acc_level_1 0.9653
+Epoch [28][ 30.10 %]    Loss 0.4696     acc_level_0 0.9954      acc_level_1 0.9653
+Epoch [28][ 40.14 %]    Loss 0.4792     acc_level_0 0.9948      acc_level_1 0.9653
+Epoch [28][ 50.17 %]    Loss 0.4684     acc_level_0 0.9958      acc_level_1 0.9611
+Epoch [28][ 60.21 %]    Loss 0.4985     acc_level_0 0.9965      acc_level_1 0.9502
+Epoch [28][ 70.24 %]    Loss 0.4882     acc_level_0 0.9960      acc_level_1 0.9484
+Epoch [28][ 80.28 %]    Loss 0.4795     acc_level_0 0.9957      acc_level_1 0.9479
+Epoch [28][ 90.31 %]    Loss 0.4850     acc_level_0 0.9961      acc_level_1 0.9468
+Epoch [28][100.00 %]    Loss 0.4953     acc_level_0 0.9944      acc_level_1 0.9449
+
+Valid_loss=0.4243, valid_acc_level_0=1.0000, valid_acc_level_1=0.9808
+Saving best model architecture...
+----------------------------------------------------------
+Epoch [29][ 10.03 %]    Loss 0.5199     acc_level_0 1.0000      acc_level_1 0.9097
+Epoch [29][ 20.07 %]    Loss 0.5071     acc_level_0 1.0000      acc_level_1 0.9271
+Epoch [29][ 30.10 %]    Loss 0.4929     acc_level_0 1.0000      acc_level_1 0.9282
+Epoch [29][ 40.14 %]    Loss 0.4574     acc_level_0 0.9983      acc_level_1 0.9340
+Epoch [29][ 50.17 %]    Loss 0.4950     acc_level_0 0.9944      acc_level_1 0.9306
+Epoch [29][ 60.21 %]    Loss 0.4848     acc_level_0 0.9954      acc_level_1 0.9363
+Epoch [29][ 70.24 %]    Loss 0.4810     acc_level_0 0.9960      acc_level_1 0.9405
+Epoch [29][ 80.28 %]    Loss 0.4849     acc_level_0 0.9957      acc_level_1 0.9418
+Epoch [29][ 90.31 %]    Loss 0.4849     acc_level_0 0.9961      acc_level_1 0.9444
+Epoch [29][100.00 %]    Loss 0.4888     acc_level_0 0.9965      acc_level_1 0.9443
+
+Valid_loss=0.5225, valid_acc_level_0=0.9936, valid_acc_level_1=0.9808
+----------------------------------------------------------
+Epoch [30][ 10.03 %]    Loss 0.5982     acc_level_0 0.9861      acc_level_1 0.9444
+Epoch [30][ 20.07 %]    Loss 0.5633     acc_level_0 0.9931      acc_level_1 0.9375
+Epoch [30][ 30.10 %]    Loss 0.5428     acc_level_0 0.9954      acc_level_1 0.9491
+Epoch [30][ 40.14 %]    Loss 0.5050     acc_level_0 0.9965      acc_level_1 0.9566
+Epoch [30][ 50.17 %]    Loss 0.4984     acc_level_0 0.9972      acc_level_1 0.9542
+Epoch [30][ 60.21 %]    Loss 0.4975     acc_level_0 0.9977      acc_level_1 0.9537
+Epoch [30][ 70.24 %]    Loss 0.5044     acc_level_0 0.9980      acc_level_1 0.9514
+Epoch [30][ 80.28 %]    Loss 0.4973     acc_level_0 0.9974      acc_level_1 0.9523
+Epoch [30][ 90.31 %]    Loss 0.4872     acc_level_0 0.9977      acc_level_1 0.9529
+Epoch [30][100.00 %]    Loss 0.4906     acc_level_0 0.9972      acc_level_1 0.9512
+
+Valid_loss=0.4365, valid_acc_level_0=1.0000, valid_acc_level_1=0.9872
+Saving best model architecture...
+----------------------------------------------------------
+Epoch [31][ 10.03 %]    Loss 0.4610     acc_level_0 1.0000      acc_level_1 0.9583
+Epoch [31][ 20.07 %]    Loss 0.4468     acc_level_0 1.0000      acc_level_1 0.9479
+Epoch [31][ 30.10 %]    Loss 0.4377     acc_level_0 1.0000      acc_level_1 0.9537
+Epoch [31][ 40.14 %]    Loss 0.4553     acc_level_0 1.0000      acc_level_1 0.9531
+Epoch [31][ 50.17 %]    Loss 0.4380     acc_level_0 1.0000      acc_level_1 0.9583
+Epoch [31][ 60.21 %]    Loss 0.4418     acc_level_0 0.9977      acc_level_1 0.9606
+Epoch [31][ 70.24 %]    Loss 0.4476     acc_level_0 0.9970      acc_level_1 0.9603
+Epoch [31][ 80.28 %]    Loss 0.4516     acc_level_0 0.9974      acc_level_1 0.9575
+Epoch [31][ 90.31 %]    Loss 0.4544     acc_level_0 0.9977      acc_level_1 0.9599
+Epoch [31][100.00 %]    Loss 0.4631     acc_level_0 0.9979      acc_level_1 0.9589
+
+Valid_loss=0.4636, valid_acc_level_0=1.0000, valid_acc_level_1=0.9679
+----------------------------------------------------------
+Epoch [32][ 10.03 %]    Loss 0.4964     acc_level_0 1.0000      acc_level_1 0.9375
+Epoch [32][ 20.07 %]    Loss 0.4800     acc_level_0 1.0000      acc_level_1 0.9514
+Epoch [32][ 30.10 %]    Loss 0.4904     acc_level_0 1.0000      acc_level_1 0.9560
+Epoch [32][ 40.14 %]    Loss 0.4973     acc_level_0 0.9983      acc_level_1 0.9479
+Epoch [32][ 50.17 %]    Loss 0.4751     acc_level_0 0.9986      acc_level_1 0.9472
+Epoch [32][ 60.21 %]    Loss 0.4586     acc_level_0 0.9965      acc_level_1 0.9525
+Epoch [32][ 70.24 %]    Loss 0.4581     acc_level_0 0.9970      acc_level_1 0.9554
+Epoch [32][ 80.28 %]    Loss 0.4747     acc_level_0 0.9974      acc_level_1 0.9557
+Epoch [32][ 90.31 %]    Loss 0.4658     acc_level_0 0.9977      acc_level_1 0.9591
+Epoch [32][100.00 %]    Loss 0.4613     acc_level_0 0.9979      acc_level_1 0.9617
+
+Valid_loss=0.4489, valid_acc_level_0=1.0000, valid_acc_level_1=0.9872
+----------------------------------------------------------
+Epoch [33][ 10.03 %]    Loss 0.3625     acc_level_0 1.0000      acc_level_1 0.9583
+Epoch [33][ 20.07 %]    Loss 0.4506     acc_level_0 1.0000      acc_level_1 0.9583
+Epoch [33][ 30.10 %]    Loss 0.4197     acc_level_0 1.0000      acc_level_1 0.9537
+Epoch [33][ 40.14 %]    Loss 0.4314     acc_level_0 0.9965      acc_level_1 0.9549
+Epoch [33][ 50.17 %]    Loss 0.4234     acc_level_0 0.9972      acc_level_1 0.9583
+Epoch [33][ 60.21 %]    Loss 0.4285     acc_level_0 0.9977      acc_level_1 0.9606
+Epoch [33][ 70.24 %]    Loss 0.4379     acc_level_0 0.9970      acc_level_1 0.9623
+Epoch [33][ 80.28 %]    Loss 0.4430     acc_level_0 0.9974      acc_level_1 0.9627
+Epoch [33][ 90.31 %]    Loss 0.4426     acc_level_0 0.9977      acc_level_1 0.9660
+Epoch [33][100.00 %]    Loss 0.4524     acc_level_0 0.9979      acc_level_1 0.9652
+
+Valid_loss=0.4325, valid_acc_level_0=0.9936, valid_acc_level_1=0.9808
+----------------------------------------------------------
+Epoch [34][ 10.03 %]    Loss 0.4737     acc_level_0 1.0000      acc_level_1 0.9722
+Epoch [34][ 20.07 %]    Loss 0.4476     acc_level_0 1.0000      acc_level_1 0.9757
+Epoch [34][ 30.10 %]    Loss 0.4725     acc_level_0 0.9977      acc_level_1 0.9699
+Epoch [34][ 40.14 %]    Loss 0.4668     acc_level_0 0.9983      acc_level_1 0.9653
+Epoch [34][ 50.17 %]    Loss 0.4635     acc_level_0 0.9986      acc_level_1 0.9667
+Epoch [34][ 60.21 %]    Loss 0.4710     acc_level_0 0.9965      acc_level_1 0.9630
+Epoch [34][ 70.24 %]    Loss 0.4638     acc_level_0 0.9970      acc_level_1 0.9643
+Epoch [34][ 80.28 %]    Loss 0.4622     acc_level_0 0.9974      acc_level_1 0.9653
+Epoch [34][ 90.31 %]    Loss 0.4592     acc_level_0 0.9977      acc_level_1 0.9668
+Epoch [34][100.00 %]    Loss 0.4493     acc_level_0 0.9979      acc_level_1 0.9666
+
+Valid_loss=0.5529, valid_acc_level_0=0.9808, valid_acc_level_1=0.9679
+----------------------------------------------------------
+Epoch [35][ 10.03 %]    Loss 0.5084     acc_level_0 1.0000      acc_level_1 0.9722
+Epoch [35][ 20.07 %]    Loss 0.4213     acc_level_0 0.9965      acc_level_1 0.9688
+Epoch [35][ 30.10 %]    Loss 0.4042     acc_level_0 0.9977      acc_level_1 0.9699
+Epoch [35][ 40.14 %]    Loss 0.4176     acc_level_0 0.9965      acc_level_1 0.9635
+Epoch [35][ 50.17 %]    Loss 0.4283     acc_level_0 0.9972      acc_level_1 0.9681
+Epoch [35][ 60.21 %]    Loss 0.4441     acc_level_0 0.9942      acc_level_1 0.9641
+Epoch [35][ 70.24 %]    Loss 0.4509     acc_level_0 0.9940      acc_level_1 0.9643
+Epoch [35][ 80.28 %]    Loss 0.4565     acc_level_0 0.9939      acc_level_1 0.9661
+Epoch [35][ 90.31 %]    Loss 0.4556     acc_level_0 0.9938      acc_level_1 0.9660
+Epoch [35][100.00 %]    Loss 0.4621     acc_level_0 0.9930      acc_level_1 0.9652
+
+Valid_loss=0.4865, valid_acc_level_0=0.9872, valid_acc_level_1=0.9551
+----------------------------------------------------------
+Epoch [36][ 10.03 %]    Loss 0.4288     acc_level_0 1.0000      acc_level_1 0.9444
+Epoch [36][ 20.07 %]    Loss 0.4113     acc_level_0 1.0000      acc_level_1 0.9583
+Epoch [36][ 30.10 %]    Loss 0.4316     acc_level_0 0.9977      acc_level_1 0.9537
+Epoch [36][ 40.14 %]    Loss 0.4228     acc_level_0 0.9983      acc_level_1 0.9531
+Epoch [36][ 50.17 %]    Loss 0.4475     acc_level_0 0.9972      acc_level_1 0.9542
+Epoch [36][ 60.21 %]    Loss 0.4519     acc_level_0 0.9977      acc_level_1 0.9525
+Epoch [36][ 70.24 %]    Loss 0.4565     acc_level_0 0.9980      acc_level_1 0.9524
+Epoch [36][ 80.28 %]    Loss 0.4574     acc_level_0 0.9983      acc_level_1 0.9497
+Epoch [36][ 90.31 %]    Loss 0.4624     acc_level_0 0.9985      acc_level_1 0.9483
+Epoch [36][100.00 %]    Loss 0.4681     acc_level_0 0.9979      acc_level_1 0.9484
+
+Valid_loss=0.4622, valid_acc_level_0=0.9936, valid_acc_level_1=0.9936
+Saving best model architecture...
+----------------------------------------------------------
+Epoch [37][ 10.03 %]    Loss 0.4394     acc_level_0 0.9931      acc_level_1 0.9514
+Epoch [37][ 20.07 %]    Loss 0.4062     acc_level_0 0.9965      acc_level_1 0.9583
+Epoch [37][ 30.10 %]    Loss 0.4514     acc_level_0 0.9977      acc_level_1 0.9537
+Epoch [37][ 40.14 %]    Loss 0.4946     acc_level_0 0.9983      acc_level_1 0.9583
+Epoch [37][ 50.17 %]    Loss 0.4797     acc_level_0 0.9986      acc_level_1 0.9625
+Epoch [37][ 60.21 %]    Loss 0.4717     acc_level_0 0.9954      acc_level_1 0.9630
+Epoch [37][ 70.24 %]    Loss 0.4722     acc_level_0 0.9940      acc_level_1 0.9623
+Epoch [37][ 80.28 %]    Loss 0.4707     acc_level_0 0.9939      acc_level_1 0.9618
+Epoch [37][ 90.31 %]    Loss 0.4807     acc_level_0 0.9938      acc_level_1 0.9606
+Epoch [37][100.00 %]    Loss 0.4742     acc_level_0 0.9937      acc_level_1 0.9617
+
+Valid_loss=0.4948, valid_acc_level_0=1.0000, valid_acc_level_1=0.9744
+----------------------------------------------------------
+Epoch [38][ 10.03 %]    Loss 0.3779     acc_level_0 1.0000      acc_level_1 0.9722
+Epoch [38][ 20.07 %]    Loss 0.3911     acc_level_0 1.0000      acc_level_1 0.9792
+Epoch [38][ 30.10 %]    Loss 0.4099     acc_level_0 0.9977      acc_level_1 0.9722
+Epoch [38][ 40.14 %]    Loss 0.4517     acc_level_0 0.9965      acc_level_1 0.9688
+Epoch [38][ 50.17 %]    Loss 0.4611     acc_level_0 0.9958      acc_level_1 0.9653
+Epoch [38][ 60.21 %]    Loss 0.4744     acc_level_0 0.9942      acc_level_1 0.9595
+Epoch [38][ 70.24 %]    Loss 0.4687     acc_level_0 0.9950      acc_level_1 0.9583
+Epoch [38][ 80.28 %]    Loss 0.4677     acc_level_0 0.9948      acc_level_1 0.9601
+Epoch [38][ 90.31 %]    Loss 0.4717     acc_level_0 0.9954      acc_level_1 0.9606
+Epoch [38][100.00 %]    Loss 0.4652     acc_level_0 0.9958      acc_level_1 0.9610
+
+Valid_loss=0.4661, valid_acc_level_0=0.9936, valid_acc_level_1=0.9679
+----------------------------------------------------------
+Epoch [39][ 10.03 %]    Loss 0.3355     acc_level_0 0.9931      acc_level_1 0.9792
+Epoch [39][ 20.07 %]    Loss 0.4072     acc_level_0 0.9965      acc_level_1 0.9722
+Epoch [39][ 30.10 %]    Loss 0.4190     acc_level_0 0.9977      acc_level_1 0.9722
+Epoch [39][ 40.14 %]    Loss 0.4188     acc_level_0 0.9983      acc_level_1 0.9740
+Epoch [39][ 50.17 %]    Loss 0.4371     acc_level_0 0.9972      acc_level_1 0.9736
+Epoch [39][ 60.21 %]    Loss 0.4455     acc_level_0 0.9942      acc_level_1 0.9676
+Epoch [39][ 70.24 %]    Loss 0.4433     acc_level_0 0.9950      acc_level_1 0.9683
+Epoch [39][ 80.28 %]    Loss 0.4511     acc_level_0 0.9957      acc_level_1 0.9635
+Epoch [39][ 90.31 %]    Loss 0.4666     acc_level_0 0.9946      acc_level_1 0.9622
+Epoch [39][100.00 %]    Loss 0.4607     acc_level_0 0.9951      acc_level_1 0.9631
+
+Valid_loss=0.4416, valid_acc_level_0=0.9936, valid_acc_level_1=0.9872
+----------------------------------------------------------
+Epoch [40][ 10.03 %]    Loss 0.4791     acc_level_0 1.0000      acc_level_1 0.9583
+Epoch [40][ 20.07 %]    Loss 0.4894     acc_level_0 0.9965      acc_level_1 0.9444
+Epoch [40][ 30.10 %]    Loss 0.4713     acc_level_0 0.9977      acc_level_1 0.9444
+Epoch [40][ 40.14 %]    Loss 0.4785     acc_level_0 0.9983      acc_level_1 0.9531
+Epoch [40][ 50.17 %]    Loss 0.4775     acc_level_0 0.9986      acc_level_1 0.9542
+Epoch [40][ 60.21 %]    Loss 0.4682     acc_level_0 0.9977      acc_level_1 0.9560
+Epoch [40][ 70.24 %]    Loss 0.4642     acc_level_0 0.9980      acc_level_1 0.9583
+Epoch [40][ 80.28 %]    Loss 0.4519     acc_level_0 0.9983      acc_level_1 0.9609
+Epoch [40][ 90.31 %]    Loss 0.4571     acc_level_0 0.9985      acc_level_1 0.9599
+Epoch [40][100.00 %]    Loss 0.4610     acc_level_0 0.9986      acc_level_1 0.9603
+
+Valid_loss=0.4904, valid_acc_level_0=0.9936, valid_acc_level_1=0.9808
+----------------------------------------------------------
+Epoch [41][ 10.03 %]    Loss 0.4247     acc_level_0 1.0000      acc_level_1 0.9375
+Epoch [41][ 20.07 %]    Loss 0.4251     acc_level_0 1.0000      acc_level_1 0.9514
+Epoch [41][ 30.10 %]    Loss 0.4380     acc_level_0 1.0000      acc_level_1 0.9606
+Epoch [41][ 40.14 %]    Loss 0.4420     acc_level_0 1.0000      acc_level_1 0.9653
+Epoch [41][ 50.17 %]    Loss 0.4405     acc_level_0 0.9986      acc_level_1 0.9639
+Epoch [41][ 60.21 %]    Loss 0.4460     acc_level_0 0.9988      acc_level_1 0.9606
+Epoch [41][ 70.24 %]    Loss 0.4604     acc_level_0 0.9990      acc_level_1 0.9623
+Epoch [41][ 80.28 %]    Loss 0.4638     acc_level_0 0.9983      acc_level_1 0.9618
+Epoch [41][ 90.31 %]    Loss 0.4585     acc_level_0 0.9985      acc_level_1 0.9599
+Epoch [41][100.00 %]    Loss 0.4583     acc_level_0 0.9965      acc_level_1 0.9603
+
+Valid_loss=0.4468, valid_acc_level_0=0.9936, valid_acc_level_1=0.9872
+----------------------------------------------------------
+Epoch [42][ 10.03 %]    Loss 0.3956     acc_level_0 1.0000      acc_level_1 0.9792
+Epoch [42][ 20.07 %]    Loss 0.4696     acc_level_0 0.9931      acc_level_1 0.9688
+Epoch [42][ 30.10 %]    Loss 0.4683     acc_level_0 0.9954      acc_level_1 0.9676
+Epoch [42][ 40.14 %]    Loss 0.4746     acc_level_0 0.9965      acc_level_1 0.9688
+Epoch [42][ 50.17 %]    Loss 0.4750     acc_level_0 0.9972      acc_level_1 0.9694
+Epoch [42][ 60.21 %]    Loss 0.4604     acc_level_0 0.9965      acc_level_1 0.9711
+Epoch [42][ 70.24 %]    Loss 0.4578     acc_level_0 0.9970      acc_level_1 0.9683
+Epoch [42][ 80.28 %]    Loss 0.4539     acc_level_0 0.9974      acc_level_1 0.9661
+Epoch [42][ 90.31 %]    Loss 0.4565     acc_level_0 0.9977      acc_level_1 0.9645
+Epoch [42][100.00 %]    Loss 0.4572     acc_level_0 0.9972      acc_level_1 0.9631
+
+Valid_loss=0.5034, valid_acc_level_0=0.9872, valid_acc_level_1=0.9744
+----------------------------------------------------------
+Epoch [43][ 10.03 %]    Loss 0.4521     acc_level_0 1.0000      acc_level_1 0.9792
+Epoch [43][ 20.07 %]    Loss 0.5133     acc_level_0 1.0000      acc_level_1 0.9653
+Epoch [43][ 30.10 %]    Loss 0.4775     acc_level_0 0.9977      acc_level_1 0.9722
+Epoch [43][ 40.14 %]    Loss 0.5063     acc_level_0 0.9965      acc_level_1 0.9635
+Epoch [43][ 50.17 %]    Loss 0.4795     acc_level_0 0.9972      acc_level_1 0.9639
+Epoch [43][ 60.21 %]    Loss 0.4715     acc_level_0 0.9977      acc_level_1 0.9676
+Epoch [43][ 70.24 %]    Loss 0.4664     acc_level_0 0.9970      acc_level_1 0.9673
+Epoch [43][ 80.28 %]    Loss 0.4676     acc_level_0 0.9974      acc_level_1 0.9688
+Epoch [43][ 90.31 %]    Loss 0.4567     acc_level_0 0.9977      acc_level_1 0.9676
+Epoch [43][100.00 %]    Loss 0.4511     acc_level_0 0.9979      acc_level_1 0.9686
+
+Valid_loss=0.5341, valid_acc_level_0=1.0000, valid_acc_level_1=0.9872
+----------------------------------------------------------
+Epoch [44][ 10.03 %]    Loss 0.4087     acc_level_0 1.0000      acc_level_1 0.9931
+Epoch [44][ 20.07 %]    Loss 0.3990     acc_level_0 1.0000      acc_level_1 0.9965
+Epoch [44][ 30.10 %]    Loss 0.4185     acc_level_0 1.0000      acc_level_1 0.9838
+Epoch [44][ 40.14 %]    Loss 0.4133     acc_level_0 1.0000      acc_level_1 0.9774
+Epoch [44][ 50.17 %]    Loss 0.4256     acc_level_0 1.0000      acc_level_1 0.9778
+Epoch [44][ 60.21 %]    Loss 0.4421     acc_level_0 1.0000      acc_level_1 0.9780
+Epoch [44][ 70.24 %]    Loss 0.4359     acc_level_0 1.0000      acc_level_1 0.9752
+Epoch [44][ 80.28 %]    Loss 0.4303     acc_level_0 1.0000      acc_level_1 0.9757
+Epoch [44][ 90.31 %]    Loss 0.4371     acc_level_0 1.0000      acc_level_1 0.9753
+Epoch [44][100.00 %]    Loss 0.4365     acc_level_0 1.0000      acc_level_1 0.9763
+
+Valid_loss=0.4184, valid_acc_level_0=1.0000, valid_acc_level_1=0.9872
+----------------------------------------------------------
+Epoch [45][ 10.03 %]    Loss 0.4084     acc_level_0 1.0000      acc_level_1 0.9653
+Epoch [45][ 20.07 %]    Loss 0.4438     acc_level_0 0.9965      acc_level_1 0.9653
+Epoch [45][ 30.10 %]    Loss 0.4232     acc_level_0 0.9977      acc_level_1 0.9699
+Epoch [45][ 40.14 %]    Loss 0.4047     acc_level_0 0.9983      acc_level_1 0.9705
+Epoch [45][ 50.17 %]    Loss 0.4304     acc_level_0 0.9986      acc_level_1 0.9667
+Epoch [45][ 60.21 %]    Loss 0.4500     acc_level_0 0.9977      acc_level_1 0.9653
+Epoch [45][ 70.24 %]    Loss 0.4432     acc_level_0 0.9980      acc_level_1 0.9653
+Epoch [45][ 80.28 %]    Loss 0.4631     acc_level_0 0.9983      acc_level_1 0.9661
+Epoch [45][ 90.31 %]    Loss 0.4600     acc_level_0 0.9985      acc_level_1 0.9645
+Epoch [45][100.00 %]    Loss 0.4590     acc_level_0 0.9986      acc_level_1 0.9645
+
+Valid_loss=0.4561, valid_acc_level_0=0.9872, valid_acc_level_1=0.9487
+----------------------------------------------------------
+Epoch [46][ 10.03 %]    Loss 0.4418     acc_level_0 1.0000      acc_level_1 0.9444
+Epoch [46][ 20.07 %]    Loss 0.4303     acc_level_0 1.0000      acc_level_1 0.9444
+Epoch [46][ 30.10 %]    Loss 0.4452     acc_level_0 0.9977      acc_level_1 0.9468
+Epoch [46][ 40.14 %]    Loss 0.4529     acc_level_0 0.9965      acc_level_1 0.9514
+Epoch [46][ 50.17 %]    Loss 0.4576     acc_level_0 0.9958      acc_level_1 0.9472
+Epoch [46][ 60.21 %]    Loss 0.4463     acc_level_0 0.9965      acc_level_1 0.9514
+Epoch [46][ 70.24 %]    Loss 0.4442     acc_level_0 0.9960      acc_level_1 0.9573
+Epoch [46][ 80.28 %]    Loss 0.4502     acc_level_0 0.9965      acc_level_1 0.9601
+Epoch [46][ 90.31 %]    Loss 0.4526     acc_level_0 0.9961      acc_level_1 0.9606
+Epoch [46][100.00 %]    Loss 0.4516     acc_level_0 0.9965      acc_level_1 0.9617
+
+Valid_loss=0.4566, valid_acc_level_0=0.9936, valid_acc_level_1=0.9744
+----------------------------------------------------------
+Epoch [47][ 10.03 %]    Loss 0.4391     acc_level_0 1.0000      acc_level_1 1.0000
+Epoch [47][ 20.07 %]    Loss 0.4413     acc_level_0 1.0000      acc_level_1 0.9792
+Epoch [47][ 30.10 %]    Loss 0.4238     acc_level_0 0.9954      acc_level_1 0.9792
+Epoch [47][ 40.14 %]    Loss 0.4321     acc_level_0 0.9948      acc_level_1 0.9774
+Epoch [47][ 50.17 %]    Loss 0.4349     acc_level_0 0.9958      acc_level_1 0.9792
+Epoch [47][ 60.21 %]    Loss 0.4289     acc_level_0 0.9954      acc_level_1 0.9757
+Epoch [47][ 70.24 %]    Loss 0.4260     acc_level_0 0.9960      acc_level_1 0.9752
+Epoch [47][ 80.28 %]    Loss 0.4273     acc_level_0 0.9965      acc_level_1 0.9731
+Epoch [47][ 90.31 %]    Loss 0.4314     acc_level_0 0.9969      acc_level_1 0.9738
+Epoch [47][100.00 %]    Loss 0.4371     acc_level_0 0.9972      acc_level_1 0.9756
+
+Valid_loss=0.5503, valid_acc_level_0=0.9936, valid_acc_level_1=0.9744
+Validation loss reached plateau. Reducing learning rate...
+----------------------------------------------------------
+Epoch [48][ 10.03 %]    Loss 0.3759     acc_level_0 1.0000      acc_level_1 0.9861
+Epoch [48][ 20.07 %]    Loss 0.4379     acc_level_0 1.0000      acc_level_1 0.9757
+Epoch [48][ 30.10 %]    Loss 0.4378     acc_level_0 1.0000      acc_level_1 0.9815
+Epoch [48][ 40.14 %]    Loss 0.4561     acc_level_0 1.0000      acc_level_1 0.9792
+Epoch [48][ 50.17 %]    Loss 0.4490     acc_level_0 1.0000      acc_level_1 0.9819
+Epoch [48][ 60.21 %]    Loss 0.4407     acc_level_0 1.0000      acc_level_1 0.9838
+Epoch [48][ 70.24 %]    Loss 0.4381     acc_level_0 1.0000      acc_level_1 0.9772
+Epoch [48][ 80.28 %]    Loss 0.4462     acc_level_0 0.9991      acc_level_1 0.9774
+Epoch [48][ 90.31 %]    Loss 0.4369     acc_level_0 0.9992      acc_level_1 0.9776
+Epoch [48][100.00 %]    Loss 0.4295     acc_level_0 0.9993      acc_level_1 0.9791
+
+Valid_loss=0.5201, valid_acc_level_0=0.9936, valid_acc_level_1=0.9744
+Validation loss reached plateau. Reducing learning rate...
+----------------------------------------------------------
+Epoch [49][ 10.03 %]    Loss 0.3772     acc_level_0 1.0000      acc_level_1 0.9792
+Epoch [49][ 20.07 %]    Loss 0.4422     acc_level_0 1.0000      acc_level_1 0.9757
+Epoch [49][ 30.10 %]    Loss 0.4313     acc_level_0 1.0000      acc_level_1 0.9815
+Epoch [49][ 40.14 %]    Loss 0.4330     acc_level_0 1.0000      acc_level_1 0.9757
+Epoch [49][ 50.17 %]    Loss 0.4282     acc_level_0 1.0000      acc_level_1 0.9764
+Epoch [49][ 60.21 %]    Loss 0.4389     acc_level_0 1.0000      acc_level_1 0.9745
+Epoch [49][ 70.24 %]    Loss 0.4338     acc_level_0 1.0000      acc_level_1 0.9762
+Epoch [49][ 80.28 %]    Loss 0.4360     acc_level_0 1.0000      acc_level_1 0.9783
+Epoch [49][ 90.31 %]    Loss 0.4327     acc_level_0 1.0000      acc_level_1 0.9792
+Epoch [49][100.00 %]    Loss 0.4367     acc_level_0 1.0000      acc_level_1 0.9812
+
+Valid_loss=0.5415, valid_acc_level_0=0.9936, valid_acc_level_1=0.9808
+Validation loss reached plateau. Reducing learning rate...
+----------------------------------------------------------
+Epoch [50][ 10.03 %]    Loss 0.4536     acc_level_0 0.9931      acc_level_1 0.9861
+Epoch [50][ 20.07 %]    Loss 0.5039     acc_level_0 0.9965      acc_level_1 0.9896
+Epoch [50][ 30.10 %]    Loss 0.4656     acc_level_0 0.9977      acc_level_1 0.9884
+Epoch [50][ 40.14 %]    Loss 0.4791     acc_level_0 0.9983      acc_level_1 0.9844
+Epoch [50][ 50.17 %]    Loss 0.4589     acc_level_0 0.9986      acc_level_1 0.9819
+Epoch [50][ 60.21 %]    Loss 0.4576     acc_level_0 0.9988      acc_level_1 0.9838
+Epoch [50][ 70.24 %]    Loss 0.4451     acc_level_0 0.9990      acc_level_1 0.9841
+Epoch [50][ 80.28 %]    Loss 0.4422     acc_level_0 0.9991      acc_level_1 0.9818
+Epoch [50][ 90.31 %]    Loss 0.4425     acc_level_0 0.9977      acc_level_1 0.9799
+Epoch [50][100.00 %]    Loss 0.4370     acc_level_0 0.9979      acc_level_1 0.9798
+
+Valid_loss=0.5266, valid_acc_level_0=0.9936, valid_acc_level_1=0.9744
+Validation loss reached plateau. Reducing learning rate...
+----------------------------------------------------------
+Epoch [51][ 10.03 %]    Loss 0.3704     acc_level_0 0.9931      acc_level_1 0.9792
+Epoch [51][ 20.07 %]    Loss 0.4171     acc_level_0 0.9965      acc_level_1 0.9861
+Epoch [51][ 30.10 %]    Loss 0.4309     acc_level_0 0.9954      acc_level_1 0.9769
+Epoch [51][ 40.14 %]    Loss 0.4542     acc_level_0 0.9965      acc_level_1 0.9774
+Epoch [51][ 50.17 %]    Loss 0.4384     acc_level_0 0.9972      acc_level_1 0.9819
+Epoch [51][ 60.21 %]    Loss 0.4298     acc_level_0 0.9977      acc_level_1 0.9769
+Epoch [51][ 70.24 %]    Loss 0.4244     acc_level_0 0.9980      acc_level_1 0.9782
+Epoch [51][ 80.28 %]    Loss 0.4297     acc_level_0 0.9983      acc_level_1 0.9774
+Epoch [51][ 90.31 %]    Loss 0.4275     acc_level_0 0.9985      acc_level_1 0.9769
+Epoch [51][100.00 %]    Loss 0.4276     acc_level_0 0.9986      acc_level_1 0.9763
+
+Valid_loss=0.5359, valid_acc_level_0=0.9936, valid_acc_level_1=0.9808
+Validation loss reached plateau. Reducing learning rate...
+----------------------------------------------------------
+Epoch [52][ 10.03 %]    Loss 0.4123     acc_level_0 1.0000      acc_level_1 0.9653
+Epoch [52][ 20.07 %]    Loss 0.4107     acc_level_0 1.0000      acc_level_1 0.9688
+Epoch [52][ 30.10 %]    Loss 0.4129     acc_level_0 1.0000      acc_level_1 0.9769
+Epoch [52][ 40.14 %]    Loss 0.4049     acc_level_0 1.0000      acc_level_1 0.9740
+Epoch [52][ 50.17 %]    Loss 0.4192     acc_level_0 0.9986      acc_level_1 0.9764
+Epoch [52][ 60.21 %]    Loss 0.4350     acc_level_0 0.9988      acc_level_1 0.9792
+Epoch [52][ 70.24 %]    Loss 0.4289     acc_level_0 0.9990      acc_level_1 0.9812
+Epoch [52][ 80.28 %]    Loss 0.4319     acc_level_0 0.9991      acc_level_1 0.9783
+Epoch [52][ 90.31 %]    Loss 0.4335     acc_level_0 0.9992      acc_level_1 0.9784
+Epoch [52][100.00 %]    Loss 0.4333     acc_level_0 0.9986      acc_level_1 0.9784
+
+Valid_loss=0.5388, valid_acc_level_0=0.9936, valid_acc_level_1=0.9808
+Validation loss reached plateau. Reducing learning rate...
+----------------------------------------------------------
+Epoch [53][ 10.03 %]    Loss 0.4404     acc_level_0 0.9931      acc_level_1 0.9861
+Epoch [53][ 20.07 %]    Loss 0.4439     acc_level_0 0.9965      acc_level_1 0.9896
+Epoch [53][ 30.10 %]    Loss 0.4196     acc_level_0 0.9977      acc_level_1 0.9745
+Epoch [53][ 40.14 %]    Loss 0.4306     acc_level_0 0.9983      acc_level_1 0.9774
+Epoch [53][ 50.17 %]    Loss 0.4404     acc_level_0 0.9986      acc_level_1 0.9806
+Epoch [53][ 60.21 %]    Loss 0.4328     acc_level_0 0.9977      acc_level_1 0.9769
+Epoch [53][ 70.24 %]    Loss 0.4275     acc_level_0 0.9970      acc_level_1 0.9782
+Epoch [53][ 80.28 %]    Loss 0.4313     acc_level_0 0.9974      acc_level_1 0.9792
+Epoch [53][ 90.31 %]    Loss 0.4381     acc_level_0 0.9977      acc_level_1 0.9776
+Epoch [53][100.00 %]    Loss 0.4316     acc_level_0 0.9972      acc_level_1 0.9770
+
+Valid_loss=0.5249, valid_acc_level_0=0.9936, valid_acc_level_1=0.9808
+Validation loss reached plateau. Reducing learning rate...
+----------------------------------------------------------
+Epoch [54][ 10.03 %]    Loss 0.4126     acc_level_0 1.0000      acc_level_1 0.9931
+Epoch [54][ 20.07 %]    Loss 0.4446     acc_level_0 1.0000      acc_level_1 0.9896
+Epoch [54][ 30.10 %]    Loss 0.4481     acc_level_0 1.0000      acc_level_1 0.9815
+Epoch [54][ 40.14 %]    Loss 0.4459     acc_level_0 1.0000      acc_level_1 0.9809
+Epoch [54][ 50.17 %]    Loss 0.4411     acc_level_0 1.0000      acc_level_1 0.9778
+Epoch [54][ 60.21 %]    Loss 0.4249     acc_level_0 1.0000      acc_level_1 0.9745
+Epoch [54][ 70.24 %]    Loss 0.4303     acc_level_0 0.9990      acc_level_1 0.9752
+Epoch [54][ 80.28 %]    Loss 0.4237     acc_level_0 0.9991      acc_level_1 0.9748
+Epoch [54][ 90.31 %]    Loss 0.4288     acc_level_0 0.9992      acc_level_1 0.9753
+Epoch [54][100.00 %]    Loss 0.4315     acc_level_0 0.9993      acc_level_1 0.9728
+
+Valid_loss=0.5310, valid_acc_level_0=0.9936, valid_acc_level_1=0.9744
+Validation loss reached plateau. Reducing learning rate...
+----------------------------------------------------------
+Epoch [55][ 10.03 %]    Loss 0.5105     acc_level_0 1.0000      acc_level_1 0.9792
+Epoch [55][ 20.07 %]    Loss 0.4365     acc_level_0 1.0000      acc_level_1 0.9757
+Epoch [55][ 30.10 %]    Loss 0.4698     acc_level_0 1.0000      acc_level_1 0.9815
+Epoch [55][ 40.14 %]    Loss 0.4601     acc_level_0 1.0000      acc_level_1 0.9844
+Epoch [55][ 50.17 %]    Loss 0.4368     acc_level_0 1.0000      acc_level_1 0.9806
+Epoch [55][ 60.21 %]    Loss 0.4392     acc_level_0 1.0000      acc_level_1 0.9826
+Epoch [55][ 70.24 %]    Loss 0.4366     acc_level_0 0.9990      acc_level_1 0.9802
+Epoch [55][ 80.28 %]    Loss 0.4505     acc_level_0 0.9983      acc_level_1 0.9792
+Epoch [55][ 90.31 %]    Loss 0.4428     acc_level_0 0.9985      acc_level_1 0.9792
+Epoch [55][100.00 %]    Loss 0.4433     acc_level_0 0.9979      acc_level_1 0.9784
+
+Valid_loss=0.5261, valid_acc_level_0=0.9936, valid_acc_level_1=0.9744
+Validation loss reached plateau. Reducing learning rate...
+----------------------------------------------------------
+Epoch [56][ 10.03 %]    Loss 0.3921     acc_level_0 1.0000      acc_level_1 0.9861
+Epoch [56][ 20.07 %]    Loss 0.3882     acc_level_0 1.0000      acc_level_1 0.9896
+Epoch [56][ 30.10 %]    Loss 0.3841     acc_level_0 1.0000      acc_level_1 0.9838
+Epoch [56][ 40.14 %]    Loss 0.4008     acc_level_0 1.0000      acc_level_1 0.9792
+Epoch [56][ 50.17 %]    Loss 0.4135     acc_level_0 0.9986      acc_level_1 0.9750
+Epoch [56][ 60.21 %]    Loss 0.4208     acc_level_0 0.9988      acc_level_1 0.9780
+Epoch [56][ 70.24 %]    Loss 0.4338     acc_level_0 0.9990      acc_level_1 0.9792
+Epoch [56][ 80.28 %]    Loss 0.4427     acc_level_0 0.9991      acc_level_1 0.9792
+Epoch [56][ 90.31 %]    Loss 0.4360     acc_level_0 0.9992      acc_level_1 0.9799
+Epoch [56][100.00 %]    Loss 0.4324     acc_level_0 0.9993      acc_level_1 0.9812
+
+Valid_loss=0.5442, valid_acc_level_0=0.9936, valid_acc_level_1=0.9808
+Validation loss reached plateau. Reducing learning rate...
+----------------------------------------------------------
+Epoch [57][ 10.03 %]    Loss 0.5586     acc_level_0 1.0000      acc_level_1 0.9722
+Epoch [57][ 20.07 %]    Loss 0.4834     acc_level_0 0.9965      acc_level_1 0.9688
+Epoch [57][ 30.10 %]    Loss 0.4651     acc_level_0 0.9977      acc_level_1 0.9722
+Epoch [57][ 40.14 %]    Loss 0.4803     acc_level_0 0.9983      acc_level_1 0.9722
+Epoch [57][ 50.17 %]    Loss 0.4691     acc_level_0 0.9986      acc_level_1 0.9750
+Epoch [57][ 60.21 %]    Loss 0.4644     acc_level_0 0.9988      acc_level_1 0.9780
+Epoch [57][ 70.24 %]    Loss 0.4599     acc_level_0 0.9970      acc_level_1 0.9742
+Epoch [57][ 80.28 %]    Loss 0.4497     acc_level_0 0.9965      acc_level_1 0.9757
+Epoch [57][ 90.31 %]    Loss 0.4446     acc_level_0 0.9969      acc_level_1 0.9776
+Epoch [57][100.00 %]    Loss 0.4327     acc_level_0 0.9972      acc_level_1 0.9777
+
+Valid_loss=0.5138, valid_acc_level_0=0.9936, valid_acc_level_1=0.9744
+Validation loss reached plateau. Reducing learning rate...
+----------------------------------------------------------
+Early stopping (patience reached)...
+
+Valid_loss=0.4622, valid_acc_level_0=0.9936, valid_acc_level_1=0.9936
+Confusion matrix, without normalization
+[[ 3  0  0  0  0  0]
+ [ 0 12  0  0  0  0]
+ [ 0  0 26  0  0  0]
+ [ 0  0  0 64  0  0]
+ [ 0  0  0  1  4  0]
+ [ 0  0  0  0  0 46]]
+Everything was running correctly!
+PS D:\PROJECT 012\otoliths-identification>
+
+
+TEST
+PS D:\PROJECT 012\otoliths-identification> python main.py --arch resnet18 --use_attention --pretrained --test -img_size 224 -b 16 -j 4
+
+Namespace(message=' ', img_size=224, arch='resnet18', epochs=100, freeze=7, lr_patience=5, early_stop=10, workers=4, lr=0.001, batch_size=16, weight_decay=0.0001, momentum=0.9, pretrained=True, test=True, train=False, use_attention=True)
+
+=> using pre-trained model 'resnet18'\nC:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+=> Using Attention ResNet18 with CBAM\nSegmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_001.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_001.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_002.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_002.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_003.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_003.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_004.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_004.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_005.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_005.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_006.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_006.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_007.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_007.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_008.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_008.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_009.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_+500µm_009.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_-500µm_001.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_-500µm_001.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_-500µm_002.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_-500µm_002.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_-500µm_003.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_-500µm_003.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_-500µm_004.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_-500µm_004.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_-500µm_005.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_-500µm_005.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_-500µm_006.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_-500µm_006.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_-500µm_007.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_010517_SCH_-500µm_007.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_001.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_001.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_002.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_002.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_003.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_003.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_004.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_004.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_005.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_005.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_006.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_006.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_007.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_007.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_008.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_008.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_009.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_009.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_010.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_010.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_011.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_011.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_012.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_012.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_013.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_013.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_014.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_014.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_015.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_015.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_016.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_+500µm_016.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_001.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_001.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_002.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_002.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_003.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_003.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_004.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_004.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_005.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_005.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_006.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_006.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_007.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_007.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_008.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_008.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_009.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_009.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_010.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_010.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_011.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_090517_SCH_-500µm_011.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_+500µm_001.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_+500µm_001.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_+500µm_003.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_+500µm_003.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_+500µm_005.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_+500µm_005.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_+500µm_006.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_+500µm_006.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_+500µm_007.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_+500µm_007.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_-500µm_001.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_-500µm_001.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_-500µm_002.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_-500µm_002.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_-500µm_003.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_-500µm_003.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_-500µm_004.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_-500µm_004.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_-500µm_005.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_-500µm_005.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_-500µm_006.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_120517_SCH_-500µm_006.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_190517_SCH_+500µm_01.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_190517_SCH_+500µm_01.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_190517_SCH_+500µm_02.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_190517_SCH_+500µm_02.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_190517_SCH_+500µm_03.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_190517_SCH_+500µm_03.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_190517_SCH_+500µm_04.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_190517_SCH_+500µm_04.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_190517_SCH_+500µm_05.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_190517_SCH_+500µm_05.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_190517_SCH_+500µm_06.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_190517_SCH_+500µm_06.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_190517_SCH_-500µm_001.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_190517_SCH_-500µm_001.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_220517_SCH_+500µm_01.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_220517_SCH_+500µm_01.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_220517_SCH_+500µm_02.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_220517_SCH_+500µm_02.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_220517_SCH_+500µm_03.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_220517_SCH_+500µm_03.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_220517_SCH_+500µm_04.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_220517_SCH_+500µm_04.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_220517_SCH_-500µm_01.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_220517_SCH_-500µm_01.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_220517_SCH_-500µm_02.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_220517_SCH_-500µm_02.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_250517_SCH_+500µm_001.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_250517_SCH_+500µm_001.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_250517_SCH_+500µm_002.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_250517_SCH_+500µm_002.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_250517_SCH_+500µm_004.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_250517_SCH_+500µm_004.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_250517_SCH_-500µm_001.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_250517_SCH_-500µm_001.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_250517_SCH_-500µm_002.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_250517_SCH_-500µm_002.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_250517_SCH_-500µm_003.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_250517_SCH_-500µm_003.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_290517_SCH_+500µm_001.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_290517_SCH_+500µm_001.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_290517_SCH_+500µm_002.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_290517_SCH_+500µm_002.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_290517_SCH_+500µm_003.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_290517_SCH_+500µm_003.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_290517_SCH_+500µm_004.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_290517_SCH_+500µm_004.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_290517_SCH_-500µm_001.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_290517_SCH_-500µm_001.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_290517_SCH_-500µm_002.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_290517_SCH_-500µm_002.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_001.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_001.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_001_gemeten.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_001_gemeten.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_002.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_002.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_002_gemeten.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_002_gemeten.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_003.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_003.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_003_gemeten.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_003_gemeten.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_004.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_004.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_004_gemeten.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_004_gemeten.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_005.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_005.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_005_gemeten.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_005_gemeten.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_006.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_006.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_006_gemeten.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_006_gemeten.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_007.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_007.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_007_gemeten.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_007_gemeten.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_008.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_008.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_008_gemeten.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_008_gemeten.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_009.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_009.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_009_gemeten.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_+500µm_009_gemeten.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_001.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_001.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_001_gemeten.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_001_gemeten.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_002.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_002.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_002_gemeten.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_002_gemeten.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_003.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_003.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_003_gemeten.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_003_gemeten.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_004.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_004.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_004_gemeten.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_004_gemeten.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_005.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_005.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_005_gemeten.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_005_gemeten.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_006.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_006.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_006_gemeten.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_006_gemeten.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_007.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_007.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_007_gemeten.jpg
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 2\GS_AD_SH_010517_SCH_-500µm_007_gemeten.jpg
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_001.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_001.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_002.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_002.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_003.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_003.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_004.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_004.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_005.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_005.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_006.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_006.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_007.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_007.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_008.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_008.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_009.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_+500µm_009.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_001.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_001.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_002.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_002.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_003.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_003.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_004.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_004.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_005.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_005.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_006.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_006.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_007.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_007.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_008.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_008.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_009.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_009.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_010.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_010.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_011.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_011.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_012.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_012.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_013.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_050517_SCH_-500µm_013.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_001.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_001.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_002.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_002.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_003.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_003.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_004.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_004.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_005.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_005.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_006.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_006.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_007.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_007.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_008.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_008.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_009.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_009.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_010.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_010.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_011.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_011.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_012.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_012.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_013.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_+500 µm_013.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_001.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_001.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_002.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_002.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_003.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_003.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_004.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_004.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_005.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_005.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_006.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_006.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_007.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_007.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_008.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_008.tif
+Segmenting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_009.tif
+Predicting on D:\PROJECT 012\otoliths-identification\output\labeled samples 2017\samples 1\GS_AD_SH_160517_SCH_-500 µm_009.tif
+Everything was running correctly!
+PS D:\PROJECT 012\otoliths-identification>

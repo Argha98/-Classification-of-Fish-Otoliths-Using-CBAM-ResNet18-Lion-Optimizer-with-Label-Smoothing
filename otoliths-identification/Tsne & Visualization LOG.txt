@@ -1,0 +1,104 @@
+make_tsne
+PS D:\PROJECT 012\otoliths-identification> python make_tsne.py
+C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Detected Attention ResNet18 model
+Model type: Attention ResNet18
+Extracting features for t-SNE visualization...
+Processed 200 samples...
+Processed 400 samples...
+Processed 600 samples...
+Processed 800 samples...
+Processed 1000 samples...
+Processed 1200 samples...
+Processed 1400 samples...
+Total samples processed: 1435
+Running t-SNE dimensionality reduction...
+Creating t-SNE visualization...
+t-SNE plot saved to: ./output/tSNE_trained_attention.png
+t-SNE data saved to: ./output/tsne_map_attention.csv
+✓ t-SNE visualization completed successfully!
+PS D:\PROJECT 012\otoliths-identification>
+
+
+
+
+
+
+
+visualization
+PS D:\PROJECT 012\otoliths-identification> python visualization.py --use_attention
+Using CPU for computation
+Created 6 sample images in ./output/sample/
+
+Starting Grad-CAM visualization...
+Processing Ammodytes tobianus...
+C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+C:\Users\HP\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+✓ Completed Ammodytes tobianus
+Processing Hyperoplus lanceolatus...
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+✓ Completed Hyperoplus lanceolatus
+Processing Ammodytes marinus...
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+✓ Completed Ammodytes marinus
+Processing Clupea harengus...
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+✓ Completed Clupea harengus
+Processing Sprattus sprattus...
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+✓ Completed Sprattus sprattus
+Processing Alosa fallax...
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+Loading Attention ResNet18 model
+✓ Completed Alosa fallax
+
+✓ All visualizations completed successfully!
+Results saved in: ./output/sample/
+PS D:\PROJECT 012\otoliths-identification>
