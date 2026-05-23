@@ -7,7 +7,7 @@ Proper data cleaning and image preprocessing is required to get best results.
 Install [conda](https://docs.conda.io/en/latest/miniconda.html) and run the following script for local installation
 
 ```bash
- git clone https://github.com/CMATERJU-NibaranDas/SET_Argha_Joydeep_2025/upload/main/otoliths-identification
+ git clone https://github.com/Argha98/-Classification-of-Fish-Otoliths-Using-CBAM-ResNet18-Lion-Optimizer-with-Label-Smoothing/tree/main/otoliths-identification
  cd otoliths-identification
  conda env create -f environment.yml
  conda activate otoliths-identification-env
